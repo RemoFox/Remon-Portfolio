@@ -22,8 +22,9 @@ body{
 /*sec-1*/
 .sec-1{
     color: white;
-background-image:  linear-gradient(to bottom,#154760,#00000018),
-url('/images/0122-uiuxfrontend-Waldek_Social-836df1eeafa62b99011d845c4163cfdc.png');
+background-image:URL('../images/0122-uiuxfrontend-Waldek_Social-836df1eeafa62b99011d845c4163cfdc.png'),
+ linear-gradient(to bottom,#154760,#00000018);
+
 height: 100vh;
 background-size: cover
 }
