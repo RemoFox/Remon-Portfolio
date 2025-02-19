@@ -1,0 +1,256 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-weight: bold; 
+     font-family: 'Rubik', sans-serif;
+  }
+body{
+  
+  overflow-x: hidden;
+}
+:root{
+  --green:#00E77F;
+  --white:#fff;
+  --black:#3d3d3d;
+  --red:rgb(255, 0, 55);
+  --blue:#1A75BC;
+  }
+/*sec-1*/
+.sec-1{
+    color: white;
+background-image:  linear-gradient(to bottom,#154760,#00000018),
+url('/images/0122-uiuxfrontend-Waldek_Social-836df1eeafa62b99011d845c4163cfdc.png');
+height: 100vh;
+background-size: cover
+}
+.logo img{
+  width:40px; 
+}
+
+.sec-1 .navbar{
+  position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+    background-color: #154760; 
+}
+.navbar a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold; 
+  font-size:1.2rem ;
+  font-family: 'Rubik', sans-serif;
+  /* padding: .5rem 2.5rem; */
+  }
+  
+ .navbar ul a:hover{
+      color:#fff;
+      transition: .5s;
+      box-shadow:0 0 5px 5px white ;
+  }
+
+.navbar button{
+  background-color: aliceblue;
+}
+
+ .home{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  height: 100%;
+
+}
+.home .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  box-shadow: none;
+  border: none;
+}
+.home .row .content{
+  box-shadow: none;
+  border: none;
+}
+.home h1{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+
+}
+ .home .image{
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  margin:60px auto 0 auto;
+  overflow: hidden;
+ background-color: rgba(245, 245, 245, 0.774);
+ animation-name: play;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+}
+@keyframes play{
+  0%   {box-shadow:0 0 20px 2px white}
+  50%   {box-shadow:0 0 20px 15px white;}
+  100% {box-shadow:0 0 20px 2px white;}
+}
+.home .image img{
+width: 25rem;
+margin-top: .5rem;
+
+}
+
+ 
+  
+
+/* sec-2 */
+
+ .row {
+   
+   margin: auto;
+   display: flex;
+   align-items: center;
+}
+ .row h3{
+  text-align: center;
+   font-size:60px;
+   font-weight: bold;
+   font-family: 'Rubik', sans-serif;
+   margin-top:6rem;
+   margin-bottom:3rem;
+   color:#1A75BC;
+text-shadow: #1A75BC;
+}
+
+ .row .card{    
+   box-shadow:0px 3px 15px var(--blue) ;
+   
+}
+ .row .card-body h5{
+   color:#3d3d3d;   
+   font-family: 'Rubik', sans-serif;
+   font-size: 1.2rem;
+   line-height:2.5rem;
+
+   font-weight: bold;
+
+}
+
+
+
+/* sec-4 */
+ .sec-4 .row .technical, .sec-4 .row .soft,.cv img{
+  box-shadow:0px 3px 15px var(--blue);
+  font-family: 'Rubik', sans-serif;
+ 
+} 
+.sec-4 .row .technical h1,.sec-4 .row .soft h1{
+   font-weight: bold;
+  font-size:2.5rem;
+  color: #1A75BC;
+  margin: 20px auto;
+  font-family: 'Rubik', sans-serif;
+}
+.sec-4 .row .technical p,.sec-4 .row .soft p{
+  font-weight: bold;
+ font-size:1.2rem;
+ color:var(--black);
+ font-family: 'Rubik', sans-serif;
+
+}
+
+/* .sec-5 .card-body h5{
+
+
+} */
+.card-text{
+   font-family: 'Rubik', sans-serif;
+  font-size:1rem;
+  color:var(--black);
+} 
+ .btn a{
+  text-decoration: none;
+  color:white;
+}
+
+
+
+.swiper-slide{
+  box-shadow:0px 3px 15px var(--blue);
+  cursor: grab;
+}
+.swiper-slide:active {
+  cursor: grabbing; 
+}
+.na h5{
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  margin-left:15px;
+}
+.bt a{
+color: aliceblue;
+text-decoration: none;
+}
+
+
+.footer {
+  margin-top: 150px;
+  background-color: #154760;
+}
+
+
+footer h5 , .icon h5{
+font-size: 1rem;
+font-weight: bold;
+color: #fff;
+}
+.icon{
+  text-decoration: none;
+}
+.list{
+  list-style:disc;
+
+}
+
+footer .fa-brands{
+  font-size:2rem;
+  color:white;
+
+}
+
+footer .icon ,.copy {
+  box-shadow:0px 3px 15px var(--blue);
+    } 
+
+@media(max-width:768px ){
+  .home h1{
+    font-size:25px;
+    text-align: center;
+  }
+ 
+  .sec-4 .row .cv img{
+    width: 200px;
+    margin: 40px auto;
+    }
+    .sec-4 .row .technical h1,  .sec-4 .row .soft h1{
+      font-size:1.8rem;
+    }
+    footer .icon h5{
+      font-size: 1rem;
+    
+    }
+ 
+  }
+ @media(max-width:576px ){
+  footer .icon{
+    margin-top: 40px;
+  }
+  footer .fa-brands{
+    font-size: 1.8rem;
+  
+  }
+  }
