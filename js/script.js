@@ -129,7 +129,7 @@
       },
     });
 
-
+if (window.innerWidth > 768) {
       window.onscroll = function()
              { 
                 value = scrollY;
@@ -155,18 +155,22 @@
             skills();
              }
 
-               if(scrollY >=2500 && scrollY <=3000)
+               if(scrollY >=2500 && scrollY <=3800)
              {
            experience();
             }
 
-            if(scrollY >=3500 && scrollY <=3600 )
+            if(scrollY >=4050 && scrollY <=4400 )
               {
            projects();
             }
 
-            if(scrollY >=3800 && scrollY <=4500  )
+            if(scrollY >=4550  && scrollY <=4900)
               {
            contact();
             }
            }
+          }
+
+
+

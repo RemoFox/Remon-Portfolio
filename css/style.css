@@ -22,7 +22,7 @@ body{
 /*sec-1*/
 .sec-1{
     color: white;
-background: linear-gradient(to bottom,#154760,#00000018),
+background: linear-gradient(to bottom,#1A75BC,#00000018),
 URL('../images/0122-uiuxfrontend-Waldek_Social-836df1eeafa62b99011d845c4163cfdc.png');
 
 
@@ -37,7 +37,7 @@ background-size: cover
   position: fixed;
     top: 0;left: 0;right: 0;
     z-index: 1000;
-    background-color: #154760; 
+    background-color: #0f6eb6; 
 }
 .navbar a{
   text-decoration: none;
@@ -48,10 +48,12 @@ background-size: cover
   /* padding: .5rem 2.5rem; */
   }
   
- .navbar ul a:hover{
+ .navbar .nav-link:hover{
+       content:'';
       color:#fff;
       transition: .5s;
       box-shadow:0 0 5px 5px white ;
+
   }
 
 .navbar button{
@@ -129,7 +131,7 @@ text-shadow: #1A75BC;
 
  .row .card{    
    box-shadow:0px 3px 15px var(--blue) ;
-   
+     border-radius:0%;
 }
  .row .card-body h5{
    color:#3d3d3d;   
@@ -164,10 +166,10 @@ text-shadow: #1A75BC;
 
 }
 
-/* .sec-5 .card-body h5{
 
-
-} */
+ .card{
+  border-radius:0%;
+ }
 .card-text{
    font-family: 'Rubik', sans-serif;
   font-size:1rem;
@@ -178,6 +180,30 @@ text-shadow: #1A75BC;
   color:white;
 }
 
+.dropdown-menu {
+  overflow-y: auto !important;
+  height: 230px;
+  scrollbar-width: thin;         
+  scrollbar-color: #888 #f1f1f1; 
+}
+
+.dropdown-menu::-webkit-scrollbar {
+  width: 6px; 
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 
 .swiper-slide{
@@ -201,9 +227,12 @@ text-decoration: none;
 
 .footer {
   margin-top: 150px;
-  background-color: #154760;
+  /* background-color: #154760; */
+   background-color: #154760; 
 }
-
+footer .icon ,.copy {
+  box-shadow:0px 3px 15px var(--white);
+    } 
 
 footer h5 , .icon h5{
 font-size: 1rem;
@@ -224,9 +253,7 @@ footer .fa-brands{
 
 }
 
-footer .icon ,.copy {
-  box-shadow:0px 3px 15px var(--blue);
-    } 
+
 
 @media(max-width:768px ){
   .home h1{
